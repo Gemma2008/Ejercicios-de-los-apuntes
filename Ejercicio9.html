@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+</head>
+<body>
+    <style>
+        #box{height: 200px;
+             width: 200px;}
+        .rojo{background-color: red}
+        .azul{background-color: blue}
+        .amarillo{background-color: yellow}
+        .verde{background-color: green}
+
+    </style>
+    <script>
+        function cambiaColor(color) {
+            console.log(color); 
+
+            var box = document.getElementById("box")
+            box.setAttribute("class", color);
+        }
+    </script>
+    <label for = "colores"> Elige color:</label>
+    <select name="colores" id="colors" onchange="cambiaColor(this.value);">
+      <option value="rojo">Rojo</option>
+      <option value="azul">Azul</option>
+      <option value="amarillo">Amarillo</option>
+      <option value="verde">Verde</option>
+    </select>
+    <div id="box"></div>
+</body>
+</html>
