@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Edad 1: <input type="text" id="edad_1"><br>
+    Edad 2: <input type="text" id="edad_2"><br>
+    <input type="button" value="Comprobar" onclick="Comprobar()">
+
+
+    <script>
+        
+        function Comprobar(){
+            var Edad1 = documentElementbyId("edad_1").value;
+            var Edad2 = documentElementbyId("edad_2").value;
+
+            if (Edad1> Edad2) {
+                alert("La persona con edad 1 es la mayor");
+                
+            }
+            
+        }
+    </script>
+   
+    
+</body>
+</html>
